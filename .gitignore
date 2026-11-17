@@ -1,0 +1,6 @@
+data/out/*
+!data/out/hashes.json
+sim/out/
+__pycache__/
+*.pyc
+baselines/ext/

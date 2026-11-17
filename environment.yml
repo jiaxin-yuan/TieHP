@@ -1,0 +1,14 @@
+# Conda environment bp26 (local). Package versions live in one place: .devcontainer/requirements.txt,
+# shared with the dev container image.
+#   conda env create -f environment.yml
+#   conda activate bp26
+name: bp26
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - cvxopt=1.3.2     # pm4py needs it; binary from conda-forge first, so pip has nothing to build
+  - pip
+  - pip:
+      - -r .devcontainer/requirements.txt
+      - torch==2.2.2  # last release with Intel-macOS wheels; the container uses the image's 2.5.1

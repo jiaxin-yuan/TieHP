@@ -1,0 +1,6 @@
+# python train/collapse_table.py (2026-11-15); % of ambiguous test prefixes; means over gen seeds 3-5 x init seeds 0-2
+batch30 at-risk 11.37 A1 0.1 A3 59.7 A3C 0.3
+batch50 at-risk 22.45 A1 0.0 A3 55.5 A3C 0.0
+date30 at-risk 0.01 runs with at-risk 3/9 A1 0.0 A3 0.0 A3C 0.0
+date50 at-risk 0.43 A1 9.0 A3 13.7 A3C 9.9
+# activity Brier, ambiguous (full precision, run_targets): batch30 A1 0.234529 A3 0.284537 A3C 0.214511 | batch50 0.340532 0.409015 0.280107 | date30 0.516013 0.348260 0.345492 | date50 0.603937 0.356241 0.356102

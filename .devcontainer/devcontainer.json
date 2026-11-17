@@ -1,0 +1,10 @@
+{
+  "name": "bp-26 (CPU, co-authors)",
+  "build": { "dockerfile": "Dockerfile" },
+  "remoteUser": "dev",
+  "updateRemoteUserUID": true,
+  "runArgs": ["--security-opt=no-new-privileges"],
+  "mounts": ["source=bp26-claude,target=/home/dev/.claude,type=volume"],
+  "containerEnv": { "PYTHONPATH": "${containerWorkspaceFolder}" },
+  "customizations": { "vscode": { "extensions": ["ms-python.python"] } }
+}

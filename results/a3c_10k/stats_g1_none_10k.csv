@@ -1,0 +1,5 @@
+check,method,baseline,subset,metric,condition,baseline_value,gain,ci_lo,ci_hi,delta,pass,runs_method,runs_baseline
+2.10,A3C,A0,all,acc_true,not_worse,0.9282,0.0001,-0.0001,0.0004,0.0100,True,9,9
+2.10,A3C,A0,all,macro_f1_true,not_worse,0.8774,0.0004,-0.0000,0.0009,0.0100,True,9,9
+2.10,A3C,A0,all,mae_pos,not_worse,0.3175,0.0292,0.0264,0.0319,0.0159,True,9,9
+2.10,A3C,A0,all,crps,not_worse,0.3175,0.1035,0.1014,0.1055,0.0159,True,9,9

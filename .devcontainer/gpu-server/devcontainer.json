@@ -1,0 +1,11 @@
+{
+  "name": "bp-26 (GPU server, rootless Docker)",
+  "build": { "dockerfile": "../Dockerfile", "context": ".." },
+  "runArgs": ["--gpus", "device=1", "--cpus=16", "--memory=32g", "--memory-swap=32g", "--pids-limit=4096",
+              "--security-opt=no-new-privileges"],
+  "remoteUser": "root",
+  "mounts": ["source=bp26-claude-root,target=/root/.claude,type=volume"],
+  "containerEnv": { "PYTHONPATH": "${containerWorkspaceFolder}" },
+  "shutdownAction": "none",
+  "customizations": { "vscode": { "extensions": ["ms-python.python"] } }
+}

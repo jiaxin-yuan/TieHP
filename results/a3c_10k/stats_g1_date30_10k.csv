@@ -1,0 +1,14 @@
+check,method,baseline,subset,metric,condition,baseline_value,gain,ci_lo,ci_hi,delta,pass,runs_method,runs_baseline
+2.2,A3,A1,ambiguous,brier_true,better,0.5160,0.1678,0.1657,0.1698,0.0258,True,9,9
+2.2,A3,A1,unambiguous,brier_true,not_worse,0.2816,0.0459,0.0447,0.0472,0.0141,True,9,9
+2.2,A3,A1,ambiguous,acc_true,report,0.9216,0.0002,-0.0013,0.0018,0.0100,,9,9
+2.2,A3,A1,ambiguous,macro_f1_true,report,0.5533,0.0039,-0.0207,0.0283,0.0100,,9,9
+2.2,A3,A1,ambiguous,nll_true,report,0.9989,0.2875,0.2843,0.2908,0.0499,,9,9
+2.2,A3,A1,unambiguous,acc_true,report,0.8797,0.0001,-0.0012,0.0013,0.0100,,9,9
+2.2,A3,A1,unambiguous,macro_f1_true,report,0.7635,-0.0029,-0.0090,0.0034,0.0100,,9,9
+2.10,A3C,A1,ambiguous,brier_true,better,0.5160,0.1705,0.1685,0.1726,0.0258,True,9,9
+2.10,A3C,A1,unambiguous,brier_true,not_worse,0.2816,0.0463,0.0450,0.0477,0.0141,True,9,9
+2.10,A3C,A3,ambiguous,brier_true,not_worse,0.3483,0.0028,0.0024,0.0032,0.0174,True,9,9
+2.10,A3C,A3,unambiguous,brier_true,not_worse,0.2357,0.0004,-0.0000,0.0008,0.0118,True,9,9
+rq1,A3C,A1,all,brier_zero,not_worse,0.1262,-0.0002,-0.0004,0.0001,0.0063,True,9,9
+rq1,A3C,A1,all,crps,not_worse,0.2392,-0.0003,-0.0004,-0.0001,0.0120,True,9,9

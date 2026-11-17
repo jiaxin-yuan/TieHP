@@ -1,0 +1,13 @@
+\begin{tabular}{llrrrrr}\toprule
+ & & \multicolumn{5}{c}{BPIC15 log}\\\cmidrule(lr){3-7}
+Metric & Baseline & 1 & 2 & 3 & 4 & 5\\\midrule
+CRPS (days) & THP & $\mathbf{+1.53}$ & $\mathbf{+1.49}$ & $\mathbf{+1.24}$ & $\mathbf{+1.48}$ & $\mathbf{+1.26}$\\
+ & SEP-LSTM & $\mathbf{+0.10}$ & $\mathbf{+0.11}$ & $\mathbf{+0.18}$ & $+0.15$ & $-0.05$\\
+ & ProcessTransformer & $\mathbf{+0.57}$ & $\mathbf{+0.53}$ & $\mathbf{+0.24}$ & $+0.32$ & $+0.02$\\
+ & SuTraN & $\mathbf{+0.06}$ & $\mathbf{+0.18}$ & $\mathbf{+0.16}$ & $-0.12$ & $\mathit{-0.21}$\\
+ & All-0 & $\mathbf{+0.06}$ & $+0.01$ & $\mathbf{+0.16}$ & $-0.23$ & $\mathit{-0.27}$\\
+\midrule
+Brier of $\hat P(\Delta_i=0)$ & THP & $\mathbf{+0.447}$ & $\mathbf{+0.418}$ & $\mathbf{+0.409}$ & $\mathbf{+0.608}$ & $\mathbf{+0.676}$\\
+ & All-0 & $\mathit{-0.303}$ & $-0.009$ & $\mathit{-0.304}$ & $\mathit{-0.116}$ & $\mathit{-0.119}$\\
+\bottomrule
+\end{tabular}
