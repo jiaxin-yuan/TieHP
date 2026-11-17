@@ -46,4 +46,4 @@ epoch  45  train -2.7756 (act 0.7376 time -3.5132 gnorm 0.93)  val 2.1054 (act 2
 epoch  46  train -2.7728 (act 0.7376 time -3.5105 gnorm 0.96)  val 2.1023 (act 2.3038 time -0.2015)  lr 2.5e-04  best 1.8632 @ 25
 epoch  47  train -2.7806 (act 0.7342 time -3.5148 gnorm 0.92)  val 2.0900 (act 2.2962 time -0.2062)  lr 2.5e-04  best 1.8632 @ 25
 epoch  48  train -2.7803 (act 0.7316 time -3.5119 gnorm 1.00)  val 2.1236 (act 2.3124 time -0.1888)  lr 2.5e-04  best 1.8632 @ 25
-BPIC15_5 A3C seed 0: best val 1.8632 @ epoch 25, 466 s, params 63520 -> /workspaces/bp-26/runs_real/BPIC15_5/A3C_s0
+BPIC15_5 A3C seed 0: best val 1.8632 @ epoch 25, 466 s, params 63520 -> runs_real/BPIC15_5/A3C_s0

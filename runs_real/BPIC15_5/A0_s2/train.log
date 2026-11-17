@@ -28,4 +28,4 @@ epoch  27  train 0.0216 (act 1.1426 time -1.1211 gnorm 1.00)  val 4.9366 (act 5.
 epoch  28  train 0.0109 (act 1.1398 time -1.1290 gnorm 0.94)  val 4.9419 (act 5.3242 time -0.3823)  lr 2.5e-04  best 4.2667 @ 7
 epoch  29  train 0.0087 (act 1.1410 time -1.1324 gnorm 1.06)  val 4.9404 (act 5.3376 time -0.3972)  lr 2.5e-04  best 4.2667 @ 7
 epoch  30  train -0.0173 (act 1.1319 time -1.1492 gnorm 0.93)  val 4.9854 (act 5.3581 time -0.3727)  lr 2.5e-04  best 4.2667 @ 7
-BPIC15_5 A0 seed 2: best val 4.2667 @ epoch 7, 298 s, params 75575 -> /workspaces/bp-26/runs_real/BPIC15_5/A0_s2
+BPIC15_5 A0 seed 2: best val 4.2667 @ epoch 7, 298 s, params 75575 -> runs_real/BPIC15_5/A0_s2

@@ -298,7 +298,7 @@ epoch 297  val [-2.7083, -2.7012, -2.7527]  active 3/3
 epoch 298  val [-2.7084, -2.7018, -2.7516]  active 3/3
 epoch 299  val [-2.7083, -2.7014, -2.7532]  active 3/3
 epoch 300  val [-2.7082, -2.7009, -2.7529]  active 3/3
-g1_none_10k_s4 A0 seed 0: best val -2.7085 @ epoch 289 -> /workspaces/bp-26/runs_a3c_10k/g1_none_10k_s4/A0_s0
-g1_none_10k_s4 A0 seed 1: best val -2.7018 @ epoch 298 -> /workspaces/bp-26/runs_a3c_10k/g1_none_10k_s4/A0_s1
-g1_none_10k_s4 A0 seed 2: best val -2.7531 @ epoch 296 -> /workspaces/bp-26/runs_a3c_10k/g1_none_10k_s4/A0_s2
+g1_none_10k_s4 A0 seed 0: best val -2.7085 @ epoch 289 -> runs_a3c_10k/g1_none_10k_s4/A0_s0
+g1_none_10k_s4 A0 seed 1: best val -2.7018 @ epoch 298 -> runs_a3c_10k/g1_none_10k_s4/A0_s1
+g1_none_10k_s4 A0 seed 2: best val -2.7531 @ epoch 296 -> runs_a3c_10k/g1_none_10k_s4/A0_s2
 group of 3: 2356 s

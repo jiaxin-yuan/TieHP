@@ -1,18 +1,18 @@
 Traceback (most recent call last):
   File "<frozen runpy>", line 198, in _run_module_as_main
   File "<frozen runpy>", line 88, in _run_code
-  File "/workspaces/bp-26/train/train.py", line 466, in <module>
+  File "train/train.py", line 466, in <module>
     main()
-  File "/workspaces/bp-26/train/train.py", line 367, in main
+  File "train/train.py", line 367, in main
     train, val, test, vocab = load_log(args.log)
                               ^^^^^^^^^^^^^^^^^^
-  File "/workspaces/bp-26/train/dataset.py", line 77, in load_log
+  File "train/dataset.py", line 77, in load_log
     return (*(load_split(log, s, vocab) for s in ("train", "val", "test")), vocab)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspaces/bp-26/train/dataset.py", line 77, in <genexpr>
+  File "train/dataset.py", line 77, in <genexpr>
     return (*(load_split(log, s, vocab) for s in ("train", "val", "test")), vocab)
               ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspaces/bp-26/train/dataset.py", line 63, in load_split
+  File "train/dataset.py", line 63, in load_split
     out["event_time"][i, :n] = torch.tensor(((ts - ts.iloc[0]).dt.total_seconds() / 86400).tolist())
                                               ~~~^~~~~~~~~~~~
   File "/opt/conda/lib/python3.11/site-packages/pandas/core/ops/common.py", line 85, in new_method
@@ -116,7 +116,7 @@ epoch  79  val [0.3646, 0.3651, 0.3671]  active 1/3
 epoch  80  val [0.3648, 0.3651, 0.3671]  active 1/3
 epoch  81  val [0.3647, 0.3651, 0.3671]  active 1/3
 epoch  82  val [0.3648, 0.3651, 0.3671]  active 0/3
-g1_batch30_10k_s3 A3C seed 0: best val 0.3634 @ epoch 58 -> /workspaces/bp-26/runs_a3c_10k/g1_batch30_10k_s3/A3C_s0
-g1_batch30_10k_s3 A3C seed 1: best val 0.3628 @ epoch 39 -> /workspaces/bp-26/runs_a3c_10k/g1_batch30_10k_s3/A3C_s1
-g1_batch30_10k_s3 A3C seed 2: best val 0.3642 @ epoch 38 -> /workspaces/bp-26/runs_a3c_10k/g1_batch30_10k_s3/A3C_s2
+g1_batch30_10k_s3 A3C seed 0: best val 0.3634 @ epoch 58 -> runs_a3c_10k/g1_batch30_10k_s3/A3C_s0
+g1_batch30_10k_s3 A3C seed 1: best val 0.3628 @ epoch 39 -> runs_a3c_10k/g1_batch30_10k_s3/A3C_s1
+g1_batch30_10k_s3 A3C seed 2: best val 0.3642 @ epoch 38 -> runs_a3c_10k/g1_batch30_10k_s3/A3C_s2
 group of 3: 635 s

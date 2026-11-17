@@ -90,6 +90,7 @@ def true_next(log: str, case: list, pos: list, logged: torch.Tensor, vocab: dict
     """True next activity (0-based) per target: the event at or after the target position with the lowest true_rank; logged label without a truth file (real logs)."""
     path = REPO / "sim" / "out" / f"{log}_truth.csv"
     if not path.exists():
+        assert not log.startswith("g1_"), f"{log}: {path} missing; regenerate it (README Guide 2, step 1)"
         return logged.clone()
     t = pd.read_csv(path)                                                 # rows in file order = prefix positions
     rank = t.groupby("CaseID", sort=False)["true_rank"].apply(list).to_dict()

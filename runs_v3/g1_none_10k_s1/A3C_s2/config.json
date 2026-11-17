@@ -14,7 +14,7 @@
  "sched": "plateau",
  "batch_size": "32",
  "lr": "0.002",
- "out": "/workspaces/bp-26/runs_v3",
+ "out": "runs_v3",
  "size_used": "10k",
  "train_targets": 25080,
  "model_type": "mixture",

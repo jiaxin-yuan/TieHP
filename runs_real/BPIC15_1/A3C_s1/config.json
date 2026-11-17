@@ -14,7 +14,7 @@
  "sched": "plateau",
  "batch_size": "32",
  "lr": "0.002",
- "out": "/workspaces/bp-26/runs_real",
+ "out": "runs_real",
  "size_used": "10k",
  "train_targets": 20764,
  "model_type": "mixture",

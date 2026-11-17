@@ -188,12 +188,24 @@ scored on the same resamples, and the output gives the gain with its 95% CI.
 | Per-log results (all metrics, subsets) | `results*/<log>/metrics.csv` | step 3 |
 
 `t1_zero_gap_causes.csv` and `t5_tie_blocks.csv` come from `eda/zero_gap_causes.py` and `eda/tie_blocks.py`, run on
-public logs placed in `raw_datasets/` (BPIC12, BPIC15_1-5, BPIC17, BPIC20, Sepsis, Helpdesk, ...). Fig. 4 uses a
-2,000-case log, which you create with `python sim/simulate_g1.py --mech batch --share 0.3 --seed 0`.
+these logs placed in `raw_datasets/` (Fig. 1 keeps the 8 logs with ≥ 2% zero gaps: BPIC15_1-5, Sepsis, BPIC12, P2P):
+
+| log (row name) | source |
+|---|---|
+| BPIC15_1-5 | https://doi.org/10.4121/uuid:31a308ef-c844-48da-948c-305d167a0ec1 |
+| BPI_Challenge_2012 | https://doi.org/10.4121/uuid:3926db30-f712-4394-aebc-75976070e91f |
+| BPIC_2017_W (W events of BPIC17) | https://doi.org/10.4121/uuid:5f3067df-f10b-45da-b98b-86ae4c7a310b |
+| BPIC20 (DD, ID, PTC, RFP, TPD = DomesticDeclarations, InternationalDeclarations, PrepaidTravelCost, RequestForPayment, PermitLog) | https://doi.org/10.4121/uuid:52fb97d4-4588-43c9-9d04-3604d4613b51 |
+| Sepsis | https://doi.org/10.4121/uuid:915d2bfb-7e84-49ad-a286-dc35f063a460 |
+| HelpDesk | https://doi.org/10.4121/uuid:0c60edf1-6f83-4e75-9367-4c63b3e9d5bb |
+
+The P2P row of `t1`/`t5` (and Fig. 1) comes from a log whose source is not listed here. Each BPIC20 log appears under two names (both copies give identical rows). Fig. 4 uses a 2,000-case log, which you
+create with `python sim/simulate_g1.py --mech batch --share 0.3 --seed 0`.
 
 ### Known limitations
 
-- Table 1, `train.collapse_risk` and `train.evaluate` need the truth files `sim/out/<log>_truth.csv` (Guide 2, step 1).
-  Without them, the true next activity silently falls back to the logged label, which gives different collapse shares.
+- Table 1, `train.collapse_risk` and `train.evaluate` need the truth files `sim/out/<log>_truth.csv` (Guide 2, step 1)
+  for simulated logs (`g1_*`), and stop with an error if one is missing. Real logs have no truth file, so the logged
+  label is used.
 - Bitwise equality across hardware or torch versions is not guaranteed. The metrics in `results*/` come from the
   included `test_pred.pt` files.

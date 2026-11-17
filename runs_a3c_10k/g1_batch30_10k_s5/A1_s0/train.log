@@ -73,7 +73,7 @@ epoch  72  val [0.6582, 0.6562, 0.6532]  active 1/3
 epoch  73  val [0.6594, 0.6562, 0.6532]  active 1/3
 epoch  74  val [0.6586, 0.6562, 0.6532]  active 1/3
 epoch  75  val [0.6595, 0.6562, 0.6532]  active 0/3
-g1_batch30_10k_s5 A1 seed 0: best val 0.6557 @ epoch 51 -> /workspaces/bp-26/runs_a3c_10k/g1_batch30_10k_s5/A1_s0
-g1_batch30_10k_s5 A1 seed 1: best val 0.6537 @ epoch 39 -> /workspaces/bp-26/runs_a3c_10k/g1_batch30_10k_s5/A1_s1
-g1_batch30_10k_s5 A1 seed 2: best val 0.6500 @ epoch 47 -> /workspaces/bp-26/runs_a3c_10k/g1_batch30_10k_s5/A1_s2
+g1_batch30_10k_s5 A1 seed 0: best val 0.6557 @ epoch 51 -> runs_a3c_10k/g1_batch30_10k_s5/A1_s0
+g1_batch30_10k_s5 A1 seed 1: best val 0.6537 @ epoch 39 -> runs_a3c_10k/g1_batch30_10k_s5/A1_s1
+g1_batch30_10k_s5 A1 seed 2: best val 0.6500 @ epoch 47 -> runs_a3c_10k/g1_batch30_10k_s5/A1_s2
 group of 3: 563 s
